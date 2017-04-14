@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+  <head>
+    <title>N.M.S.A.</title>
+    <base href="/~1125427/angular/quickstart/src/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="../node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="../node_modules/zone.js/dist/zone.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+	<div1 bgcolor="grey">
+    <my-app> <h1 align="center">Welcome to<br>Nuba Mountains Solidarity Abroad<br> N. M. S. A.<br>UK</h1><br>
+	</my-app>
+	<marquee>We are the histary makers</marquee>
+	</div1>
+
+	<br><br><br><br><br>	
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post" bgcolor="grey" align="center">
+			Please join us by provide the following details:<br>
+			Name: <br><input type="text" name="name"><br>
+			Gender: <br><input type="text" name="gender"><br>
+			DoB: <br><input type="text" name="dof"><br>
+			Country: <br><input type="text" name="country"><br>
+			City: <br><input type="text" name="city"><br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+	
+  </body>
+</html>
